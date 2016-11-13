@@ -5,4 +5,4 @@ SlResponsive Uses:
 - TGM Plugin Activation (http://tgmpluginactivation.com), licensed under GNU GENERAL PUBLIC LICENSE v2 (http://www.gnu.org/licenses/gpl-2.0.html)
 
 - Images used in screenshot.png: 
-Photo by Chris Adamus (https://unsplash.com/@adamus), licensed under Creative Commons Zero(http://creativecommons.org/publicdomain/zero/1.0/)
+Photo by Olenka Kotyk (https://unsplash.com/@olenka_kotyk), licensed under Creative Commons Zero(http://creativecommons.org/publicdomain/zero/1.0/)
