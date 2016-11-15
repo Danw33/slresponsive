@@ -9,7 +9,10 @@ Photo by Olenka Kotyk (https://unsplash.com/@olenka_kotyk), licensed under Creat
 
 
 Changelog:
-v.3.0.1 (Nov 14, 2016) 
+v.3.0.2 (Nov 15, 2016) 
+1. Updated: screenshot.png
+
+v.3.0.1 (Nov 15, 2016) 
 1. Added: Mobile menu.
 2. Added: Custom page templates.
 3. Improved: Widget title border-bottom added, ::after class added
