@@ -9,6 +9,10 @@ Photo by Olenka Kotyk (https://unsplash.com/@olenka_kotyk), licensed under Creat
 
 
 Changelog:
+v.3.0.4 (Nov 15, 2016) 
+1. Added: Footer Bttom Right widget 
+2. Added: Social Media Engine plugin support
+
 v.3.0.3 (Nov 15, 2016) 
 1. Updated: screenshot.png
 

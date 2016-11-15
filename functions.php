@@ -99,6 +99,15 @@ function slresponsive_widgets_init() {
 		'before_title'  => '<h6 class="widget-title">',
 		'after_title'   => '</h6>',
 	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer Bottom Right', 'slresponsive' ),
+		'id'            => 'footer-bottom-right',
+		'description'   => esc_html__( 'Add widgets here.', 'slresponsive' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h6 class="widget-title">',
+		'after_title'   => '</h6>',
+	) );
 }
 add_action( 'widgets_init', 'slresponsive_widgets_init' );
 

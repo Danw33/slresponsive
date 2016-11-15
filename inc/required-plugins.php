@@ -28,15 +28,11 @@ function slresponsive_register_required_plugins() {
 			'required'  => false,
 		),
 		array(
-			'name'      => 'Page Builder от SiteOrigin',
-			'slug'      => 'siteorigin-panels',
+			'name'      => 'Social Media Engine',
+			'slug'      => 'social-media-engine',
 			'required'  => true,
 		),
-		array(
-			'name'      => 'SiteOrigin Widgets Bundle',
-			'slug'      => 'so-widgets-bundle',
-			'required'  => true,
-		),
+		
 		//array(
 		//	'name'      => 'Meta Box',
 		//	'slug'      => 'meta-box',

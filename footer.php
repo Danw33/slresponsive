@@ -23,6 +23,15 @@
 					<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'slresponsive' ), 'Slresponsive', '<a href="http://awothemes.pro" rel="designer">AwoThemes</a>' ); ?>
 				</div>
 				<div class="right-col col-md-6">
+				<?php if ( !dynamic_sidebar('footer-bottom-right') ) : ?>
+					<?php echo do_shortcode('[sme_social_links facebook="#" twitter="#" instagram="#" float="right" skin="dark" shape="circle" size="medium"]');?>
+				<?php else: ?>  
+				  <?php dynamic_sidebar( 'footer-bottom-right' ); ?>
+				<?php endif; ?>
+					
+					
+					
+
 				</div>
 			</div>
 		</div><!-- .site-info -->
