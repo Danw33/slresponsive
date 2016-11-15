@@ -1,5 +1,66 @@
-.main-navigation ul {
+.main-navigation .primary-menu {
   float: right;
+}
+
+@media (max-width: 768px) {
+  .main-navigation .primary-menu {
+    display: none;
+  }
+}
+
+.main-navigation .navbar-toggler {
+  float: right;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .main-navigation .navbar-toggler {
+    display: block;
+  }
+}
+
+.main-navigation .mobile-menu.collapse {
+  display: none !important;
+  height: 1px;
+  text-align: right;
+  -webkit-transition-timing-function: ease;
+       -o-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-property: height;
+  -o-transition-property: height;
+  transition-property: height;
+}
+
+.main-navigation .mobile-menu.collapse.in {
+  text-align: right;
+  margin-top: 60px;
+  display: block !important;
+  height: auto;
+}
+
+@media (min-width: 769px) {
+  .main-navigation .mobile-menu.collapse.in {
+    display: none !important;
+  }
+}
+
+.main-navigation .mobile-menu.collapsing {
+  text-align: right !important;
+  margin-top: 60px;
+  display: block !important;
+  height: auto;
+  -webkit-transition-timing-function: ease;
+       -o-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-duration: .35s;
+       -o-transition-duration: .35s;
+          transition-duration: .35s;
+  -webkit-transition-property: height;
+  -o-transition-property: height;
+  transition-property: height;
 }
 
 .site-content {
@@ -102,7 +163,21 @@ nav.navigation.posts-navigation .nav-links {
 }
 
 .widget .widget-title {
+  padding-bottom: 0.5em;
   margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.widget .widget-title::after {
+  position: absolute;
+  background: #4b77be;
+  left: 0;
+  height: 1px;
+  bottom: -1px;
+  z-index: 9;
+  width: 30%;
+  content: "";
 }
 
 .widget li {
@@ -280,6 +355,34 @@ embed, iframe, object {
 
 .bypostauthor {
   position: relative;
+}
+
+.page-template-template-fullwidth-no-heading .site-content,
+.page-template-template-transparent-header_fullwidth_no-heading .site-content {
+  margin-top: 0;
+}
+
+.page-template-template-fullwidth-no-heading .entry-footer,
+.page-template-template-transparent-header_fullwidth_no-heading .entry-footer {
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+
+.page-template-template-transparent-header_fullwidth_no-heading .site-header {
+  position: absolute;
+  background-color: transparent !important;
+  width: 100%;
+  z-index: 9;
+}
+
+.page-template-template-transparent-header_fullwidth_no-heading .main-navigation {
+  background-color: transparent !important;
+}
+
+input.form-control.serch-input {
+  width: 100%;
+  margin-bottom: 0.5em;
 }
 
 /*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */

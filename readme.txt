@@ -6,3 +6,13 @@ SlResponsive Uses:
 
 - Images used in screenshot.png: 
 Photo by Olenka Kotyk (https://unsplash.com/@olenka_kotyk), licensed under Creative Commons Zero(http://creativecommons.org/publicdomain/zero/1.0/)
+
+
+Changelog:
+v.3.0.1 (Nov 14, 2016) 
+1. Added: Mobile menu.
+2. Added: Custom page templates.
+3. Improved: Widget title border-bottom added, ::after class added
+
+v.3 (Nov 14, 2016) 
+1. Migration from Gumby Framework to Twitter Bootstrap 4 

@@ -22,9 +22,14 @@
 <body <?php body_class(); ?>>
 	<header id="masthead" class="site-header bg-inverse" role="banner">
 		<nav id="site-navigation" class="main-navigation navbar navbar-dark bg-inverse container" role="navigation">
-			  <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => null, 'menu_id' => 'primary-menu', 'items_wrap' => '<ul id="%1$s" class="nav navbar-nav %2$s">%3$s</ul>', 'walker' => new WPDocs_Walker_Nav_Menu() ) ); ?>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation"></button>
+			<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => null, 'menu_id' => 'primary-menu', 'items_wrap' => '<ul id="%1$s" class="nav navbar-nav primary-menu">%3$s</ul>', 'walker' => new WPDocs_Walker_Nav_Menu() ) ); ?>
+			<div class="mobile-menu collapse navbar-toggleable-md" id="mobile-menu">
+				<?php wp_nav_menu( array( 'theme_location' => 'mobile', 'container' => null, 'menu_id' => 'mobile-menu', 'items_wrap' => '<ul id="%1$s" class="nav navbar-nav">%3$s</ul>', 'walker' => new WPDocs_Walker_Nav_Menu() ) ); ?>
+			</div>
 		</nav><!-- #site-navigation -->
+
 	</header><!-- #masthead -->
 	<div class="container">
 		<div id="content" class="site-content row">

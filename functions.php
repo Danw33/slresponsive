@@ -46,6 +46,7 @@ function slresponsive_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'slresponsive' ),
+		'mobile' => esc_html__( 'Mobile', 'slresponsive' ),
 	) );
 
 	/*
@@ -110,6 +111,7 @@ function slresponsive_scripts() {
 	wp_enqueue_script( 'jquery' );
 
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array(), '20151215', true );
+	wp_enqueue_script( 'navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
